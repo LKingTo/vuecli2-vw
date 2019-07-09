@@ -1,6 +1,6 @@
 # vuecli2-vw
 
-> vue-cli2引用vw移动端适配方案
+> vue-cli2引用vw移动端适配方案，含兼容方案、1px边框、元素容器宽高比设置demo
 
 ## 项目构建
 ### 参考文献
@@ -24,6 +24,10 @@
 - sass sass-loader node-sass：postcss-write-svg定义函数依赖scss
 
 - sass-resources-loader：实现scss定义的函数设为全局变量，设置见build/utils.js
+
+## vw兼容方案
+### Github - https://github.com/rodneyrehm/viewport-units-buggyfill
+### 引入viewport-units-buggyfill.js和viewport-units-buggyfill.hacks.js
 
 ## Build Setup
 
