@@ -1,12 +1,13 @@
 # vuecli2-vw
 
-> vue-cli2引用vw移动端适配方案，含兼容方案、1px边框、元素容器宽高比设置demo
+> vue-cli2引用vw移动端适配方案，含兼容方案、1px边框、元素容器宽高比设置demo。附：rem适配方案
 
 ## 项目构建
 ### 参考文献
 - 如何在Vue项目中使用vw实现移动端适配(https://www.jianshu.com/p/1f1b23f8348f)
 
-## 插件安装
+## vw适配方案
+### 插件安装
 - postcss-aspect-ratio-mini：主要用来处理元素容器宽高比。
 
 - postcss-px-to-viewport：主要用来把px单位转换为vw、vh、vmin或者vmax这样的视窗单位，也是vw适配方案的核心插件之一。
@@ -28,6 +29,25 @@
 ## vw兼容方案
 ### Github - https://github.com/rodneyrehm/viewport-units-buggyfill
 ### 引入viewport-units-buggyfill.js和viewport-units-buggyfill.hacks.js
+
+## rem适配方案
+### 插件安装
+- postcss-pxtorem：把px单位转换为rem
+
+### .postcssrc.js文件配置
+
+```
+module.exports = {
+    plugins: {
+        'postcss-pxtorem': {
+            rootValue: 32,
+            propList: ['*'],
+            minPixelValue: 2
+         }
+    }
+};
+```
+### index.html引入autoRootFontSize.js
 
 ## Build Setup
 

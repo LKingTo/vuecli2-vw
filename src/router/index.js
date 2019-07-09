@@ -15,6 +15,11 @@ const routes = new VueRouter({
 			path: '/demo1',
 			component: () => import('@/components/demo1')
 		},
+		{
+			name: 'demo2',
+			path: '/demo2',
+			component: () => import('@/components/demo2')
+		},
 	]
 })
 

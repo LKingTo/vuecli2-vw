@@ -8,6 +8,7 @@ module.exports = {
 		"postcss-aspect-ratio-mini": {},
 		"postcss-write-svg": {utf8: false},
 		"postcss-cssnext": {},
+		// vw适配方案
 		"postcss-px-to-viewport": {
 			viewportWidth: 750,      // 视窗的宽度，对应的是我们设计稿的宽度，一般是750
 			viewportHeight: 1334,    // 视窗的高度，根据750设备的宽度来指定，一般指定1334，也可以不配置
@@ -22,7 +23,14 @@ module.exports = {
 			preset: "advanced",
 			autoprefixer: false,
 			"postcss-zindex": false // 为true时，z-index的值就会重置为1
-		}
+		},
 		// "autoprefixer": {}		// cssnext与cssnano都具有autoprefixer，所有只保留一个
+
+		// rem适配方案
+		// 'postcss-pxtorem': {
+		// 	rootValue: 32,
+		// 	propList: ['font', 'font-size', 'line-height', 'letter-spacing'], // 需要转换为rem的属性，'*'表示全部
+		// 	minPixelValue: 2
+		// }
 	}
 }
