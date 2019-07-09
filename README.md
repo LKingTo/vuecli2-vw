@@ -21,6 +21,10 @@
 
 - postcss-viewport-units：主要是给CSS的属性添加content的属性，配合viewport-units-buggyfill库给vw、vh、vmin和vmax做适配的操作。
 
+- sass sass-loader node-sass：postcss-write-svg定义函数依赖scss
+
+- sass-resources-loader：实现scss定义的函数设为全局变量，设置见build/utils.js
+
 ## Build Setup
 
 ``` bash
